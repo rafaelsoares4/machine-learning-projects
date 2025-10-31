@@ -1,0 +1,38 @@
+# Ambientes virtuais
+venv/
+venv_*/
+env/
+ENV/
+.venv/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Modelos treinados
+*.pkl
+*.h5
+*.joblib
+
+# Logs
+*.log
+logs/
+
+# Dados temporários do CatBoost
+catboost_info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
