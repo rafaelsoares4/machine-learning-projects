@@ -2,20 +2,33 @@
 .DS_Store
 Thumbs.db
 
-# Ignorar ambientes virtuais
+# Ambientes virtuais
 venv/
+venv_*/
 venv_tf/
 tensorflow_env/
+env/
+ENV/
+.venv/
 */venv*/
-*/__pycache__/
 
-# Ignorar arquivos temporários
-*.tmp
-*.log
+# Arquivos Python
+__pycache__/
+*/__pycache__/
+*.py[cod]
 *.pyc
 *.pyo
 *.pyd
+*$py.class
+*.so
 .Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos temporários
+*.tmp
+*.log
 build/
 develop-eggs/
 dist/
@@ -32,11 +45,15 @@ wheels/
 .installed.cfg
 *.egg
 
-# Ignorar arquivos de IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Modelos treinados
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.joblib
+
+# Dados temporários do CatBoost
+catboost_info/
 
 # Ignorar arquivos de cache
 .cache/
@@ -44,10 +61,12 @@ wheels/
 .coverage
 htmlcov/
 
-# Ignorar arquivos de dados grandes
-*.h5
-*.hdf5
-*.pkl
-*.pickle
+# Arquivos de dados grandes
 *.npy
 *.npz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
