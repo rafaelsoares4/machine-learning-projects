@@ -1,38 +1,72 @@
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
 # Ambientes virtuais
 venv/
 venv_*/
+venv_tf/
+tensorflow_env/
 env/
 ENV/
 .venv/
+*/venv*/
 
 # Arquivos Python
 __pycache__/
+*/__pycache__/
 *.py[cod]
+*.pyc
+*.pyo
+*.pyd
 *$py.class
 *.so
+.Python
 
 # Jupyter Notebook
 .ipynb_checkpoints/
 
+# Arquivos temporários
+*.tmp
+*.log
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
 # Modelos treinados
 *.pkl
+*.pickle
 *.h5
+*.hdf5
 *.joblib
-
-# Logs
-*.log
-logs/
 
 # Dados temporários do CatBoost
 catboost_info/
+
+# Ignorar arquivos de cache
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Arquivos de dados grandes
+*.npy
+*.npz
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# Sistema
-.DS_Store
-Thumbs.db
-
